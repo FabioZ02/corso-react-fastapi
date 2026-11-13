@@ -16,3 +16,7 @@ def root():
 @app.get("/saluta/{nome}")
 def saluta(nome: int):
     return{"messaggio": f"Saluta {nome}!"}
+
+@app.get("/somma")
+def somma(a: int, b: int = 0):
+    return {"risultato": a + b}
