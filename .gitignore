@@ -1,0 +1,14 @@
+
+cat > .gitignore << 'EOF'
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Segreti e editor
+.env
+.vscode/
